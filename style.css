@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch:wght@500&display=swap');
+body{
+  background-color: rgb(107, 2, 51);
+  font-family: 'Chakra Petch';
+  font-size: larger;
+}
+
+.questions div{
+  width: 900px;
+  height: 480px;
+  background-color: rgb(241, 184, 184);
+  border-radius: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+.questions{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar{
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 16%;
+  background-color: black;
+  color: rgb(243, 237, 237);
+  text-align: center;
+  top: 0;
+  z-index: 10;
+}
+
+input{
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.submit{
+  width: 150px;
+  height: 35px;
+  font-size: 20px;
+}
+
+#one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#ten,
+#eleven,#twelve,#thirteen,#fourteen,#fifteen{
+  z-index: 1;
+}
+
+#dotspic,#africapic{
+  z-index: 2;
+}
+.overlay{
+  background-color: grey;
+  opacity: 0.4;
+  z-index: 9;
+}
+
+#graphy,#mona{
+  cursor: zoom-in;
+}
