@@ -1,6 +1,6 @@
 var score = 0; 
 document.getElementById('submit1').addEventListener('click',()=>{
-  if (document.getElementById('louvre').value.toLowerCase() == 'laduree'){
+  if (document.getElementById('louvre').value.toLowerCase() == 'laduree' or document.getElementById('louvre').value.toLowerCase() == 'ladurée'){
     score = score + 1;
     window.alert('Well done!');
     document.getElementById('one').classList.add('overlay');
