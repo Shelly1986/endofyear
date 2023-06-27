@@ -5,6 +5,10 @@ body{
   font-size: larger;
 }
 
+.hidden{
+  display: none;
+  
+}
 .questions div{
   width: 900px;
   height: 480px;
