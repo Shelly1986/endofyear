@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script src="script1.js" defer></script>
+  <script src="https://unpkg.com/pure-md5@latest/lib/index.js"></script>
   <title>End of Term</title>
 </head>
 <body>
@@ -24,28 +25,28 @@
       <p>You planned a trip to Paris and you visited the famous museum that houses the Mona Lisa painting. As you come out of the museum, you feel like having pastries. Using <a href="https://www.google.com/maps" target= "_blank">Google Maps</a>, find out the name of the nearest pastry shop near the museum.</p>
       <br>
       <b><label for ="louvre">Your Answer:</label></b>
-      <input type="text" id ="louvre" autocomplete="off">
-      <button class="submit" id="submit1">Submit Answer</button>
-      <img src = "" id ="laduree" class = "hidden" width="30" height="30">
+      <input type="text" id ="c1" autocomplete="off" mdf ="7499298c7854e32cb6989e475e64bf16">
+      <button class="submit" id="submit1" onclick="check('submit1','c1','img1','one')">Submit Answer</button>
+      <img src = "" id ="img1" class = "hidden" width="30" height="30">
     </div>
     <div id = "two">
       <h1><b>Challenge 2</b></h1>
       <p>He is a visionary entrepreneur who transformed online shopping and revolutionized the way we think about e-commerce.</p>
       <p>What is his first name?</p>
-      <center><img src ="bezos.jpg" width="180" height="180" id="beanpic"></center>
+      <center><img src ="ab.jpg" width="180" height="180"></center>
       <br>
-      <b><label for ="bean">Your Answer:</label></b>
-      <input type="text" id ="bean" autocomplete="off">
-      <button class="submit" id="submit2">Submit Answer</button>
+      <b><label for ="c2">Your Answer:</label></b>
+      <input type="text" id ="c2" autocomplete="off" mdf="7b04d1b6ceaa03db6cb216f40467fcab">
+      <button class="submit" id="submit2" onclick="check('submit2','c2','img2','two')">Submit Answer</button>
       <img src = "" id ="img2" class = "hidden" width="30" height="30">
       
     </div>
     <div id = "three">
       <h1><b>Challenge 3</b></h1>
       <p>I am a business magnate and visionary known for my involvement in cutting-edge ventures. I co-founded an online financial services company, pioneered reusable rocket technology, and founded a neuroscience startup. My first name rhymes with 'melon' and my last name is the name of a small rodent. Who am I?</p>
-      <b><label for ="musk">Your Answer:</label></b>
-      <input type="text" id ="musk" autocomplete="off">
-      <button class="submit" id="submit3">Submit Answer</button>
+      <b><label for ="c3">Your Answer:</label></b>
+      <input type="text" id ="c3" autocomplete="off" mdf="c5fa86b99cb1db597af60cf8e297dfba">
+      <button class="submit" id="submit3" onclick="check('submit3','c3','img3','three')">Submit Answer</button>
       <img src = "" id ="img3" class = "hidden" width="30" height="30">
     </div>
     <div id = "four">
@@ -53,9 +54,9 @@
       <p>How many dots at the intersections are black?</p>
       <center><img src ="dots.PNG" width="250" height="250" id="dotspic"></center>
       <br>
-      <b><label for ="dots">Your Answer:</label></b>
-      <input type="text" id ="dots" autocomplete="off">
-      <button class="submit" id="submit4">Submit Answer</button>
+      <b><label for ="c4">Your Answer:</label></b>
+      <input type="text" id ="c4" autocomplete="off" mdf="cfcd208495d565ef66e7dff9f98764da">
+      <button class="submit" id="submit4" onclick="check('submit4','c4','img4','four')">Submit Answer</button>
       <img src = "" id ="img4" class = "hidden" width="30" height="30">
     </div>
     <div id = "five">
@@ -63,9 +64,9 @@
       <br>
       <p>The answer to this challenge is hidden <a href = "https://naeeuro-my.sharepoint.com/:p:/g/personal/shelly_sachdev_thebritishschool_pl/EROsqf_ADL9AtX1NHZHYUVIBZOjxTkvPS79a5yqQnKg3QA?e=UEuxFL" target = "_blank">here</a></p>
       <br>
-      <b><label for ="sine">Your Answer:</label></b>
-      <input type="text" id ="sine" autocomplete="off">
-      <button class="submit" id="submit5">Submit Answer</button>
+      <b><label for ="c5">Your Answer:</label></b>
+      <input type="text" id ="c5" autocomplete="off" mdf="375739caf3dfc90d711794c73c30e3dc">
+      <button class="submit" id="submit5" onclick="check('submit5','c5','img5','five')">Submit Answer</button>
       <img src = "" id ="img5" class = "hidden" width="30" height="30">
     </div>
     <div id = "six">
@@ -73,17 +74,17 @@
       <p>The answer to this challenge is in <a href="challenge6.txt" target="_blank">this</a>&nbsp;text file.</p>
       <br>
       <b><label for ="smoke">Your Answer:</label></b>
-      <input type="text" id ="smoke" autocomplete="off">
-      <button class="submit" id="submit6">Submit Answer</button>
+      <input type="text" id ="c6" autocomplete="off" mdf="245b75293daa1d3424232585b71e6b9b">
+      <button class="submit" id="submit6" onclick="check('submit6','c6','img6','six')">Submit Answer</button>
       <img src = "" id ="img6" class = "hidden" width="30" height="30">
     </div>
     <div id = "seven">
       <h1><b>Challenge 7</b></h1>
       <p>A distorted image of a famous tech CEO is in this GIMP&nbsp;<a href="blurred.xcf">file</a></p>
       <p>Use your GIMP editing skills to reveal the hidden picture and write his name below.</p>
-      <b><label for ="blur">Your Answer:</label></b>
-      <input type="text" id ="blur" autocomplete="off">
-      <button class="submit" id="submit7">Submit Answer</button>
+      <b><label for ="c7">Your Answer:</label></b>
+      <input type="text" id ="c7" autocomplete="off" mdf="2e1e812405da5bd3f5bc0a053eb2b2bf">
+      <button class="submit" id="submit7" onclick="check('submit7','c7','img7','seven')" >Submit Answer</button>
       <img src = "" id ="img7" class = "hidden" width="30" height="30">
     </div>
     <div id = "eight">
@@ -92,8 +93,8 @@
       <center><img src ="africa.PNG" width="250" height="250" id="africapic"></center>
       <br>
       <b><label for ="africa">Your Answer:</label></b>
-      <input type="text" id ="africa" autocomplete="off">
-      <button class="submit" id="submit8">Submit Answer</button>
+      <input type="text" id ="c8" autocomplete="off" mdf="e0d829a023d4407c9ddd6ebcf2037202">
+      <button class="submit" id="c8" onclick="check('submit8','c8','img8','eight')" >Submit Answer</button>
       <img src = "" id ="img8" class = "hidden" width="30" height="30">
     </div>
     <div id = "nine">
@@ -102,8 +103,8 @@
       <p>Find out how many of these customers have spent over 40000 zl in a month.</p>
       <p><b>Clue</b> - Excel filters help you find data much faster than manual counting.</p>
       <b><label for ="credit">Your Answer:</label></b>
-      <input type="text" id ="credit" autocomplete="off">
-      <button class="submit" id="submit9">Submit Answer</button>
+      <input type="text" id ="c9" autocomplete="off" mdf="2d1b2a5ff364606ff041650887723470">
+      <button class="submit" id="c9" onclick="check('submit9','c9','img9','nine')" >Submit Answer</button>
       <img src = "" id ="img9" class = "hidden" width="30" height="30">
     </div>
     <div id = "ten">
@@ -112,18 +113,18 @@
       <br>
       <center><img src = "bin.PNG" width="250" height="250"></center>
       <label for ="binary">Your Answer:</label>
-      <input type="text" id ="binary" autocomplete="off">
-      <button class="submit" id="submit10">Submit Answer</button>
+      <input type="text" id ="c10" autocomplete="off" mdf="a9b7ba70783b617e9998dc4dd82eb3c5">
+      <button class="submit" id="c10" onclick="check('submit10','c10','img10','ten')" >Submit Answer</button>
       <img src = "" id ="img10" class = "hidden" width="30" height="30">
     </div>
     <div id = "eleven">
       <h1>Challenge 11</h1>
       <p>Which company manufactured this device?</p>
       <br>
-      <center><img src = "mac.png" width="210" height="210"></center>
-      <label for ="mac">Your Answer:</label>
-      <input type="text" id ="mac" autocomplete="off">
-      <button class="submit" id="submit11">Submit Answer</button>
+      <center><img src = "device.png" width="210" height="210"></center>
+      <label for ="c11">Your Answer:</label>
+      <input type="text" id ="c11" autocomplete="off" mdf="4c462d6dd59d782386bb1cdad0060c70">
+      <button class="submit" id="submit11" onclick="check('submit11','c11','img11','eleven')">Submit Answer</button>
       <img src = "" id ="img11" class = "hidden" width="30" height="30">
       <br>
     </div>
@@ -131,9 +132,9 @@
       <h1>Challenge 12</h1>
       <p>There are 4 digits in a number. Digit C is one more than digit A, which is twice digit D, which is ten less than digit A plus 8. Digit B is digit A+C+D minus two.</p>
       <p>What is the number?</p>
-      <b><label for ="lake">Your Answer:</label></b>
-      <input type="text" id ="lake" autocomplete="off">
-      <button class="submit" id="submit12">Submit Answer</button>
+      <b><label for ="c12">Your Answer:</label></b>
+      <input type="text" id ="c12" autocomplete="off" mdf="4f164cf233807fc02da06599a1264dee">
+      <button class="submit" id="submit12" onclick="check('submit12','c12','img12','twelve')">Submit Answer</button>
       <img src = "" id ="img12" class = "hidden" width="30" height="30">
 
     </div>
@@ -141,18 +142,18 @@
       <h1>Challenge 13</h1>
       <p>There is a hidden word in the below picture. Can you find it?</p>
       <center><img src = "steg.png" width="50" height="250" id="graphy"></center>
-      <b><label for ="steg">Your Answer:</label></b>
-      <input type="text" id ="steg" autocomplete="off">
-      <button class="submit" id="submit13">Submit Answer</button>
+      <b><label for ="c13">Your Answer:</label></b>
+      <input type="text" id ="c13" autocomplete="off" mdf="1693585c16d0cf1de944dc9a406850d2">
+      <button class="submit" id="submit13" onclick="check('submit13','c13','img13','thirteen')">Submit Answer</button>
       <img src = "" id ="img13" class = "hidden" width="30" height="30">
     </div>
     <div id = "fourteen">
       <h1>Challenge 14</h1>
       <p>Mona Lisa is hiding something. Can you find out?</p>
       <center><img src="mona.PNG" width="200" height="200" id="mona"></center>
-      <b><label for ="monal">Your Answer:</label></b>
-      <input type="text" id ="monal" autocomplete="off">
-      <button class="submit" id="submit14">Submit Answer</button>
+      <b><label for ="c14">Your Answer:</label></b>
+      <input type="text" id ="c14" autocomplete="off" mdf="95f4acbec0b1a59daa7bbdea3d43d9eb">
+      <button class="submit" id="submit14" onclick="check('submit14','c14','img14','fourteen')">Submit Answer</button>
       <img src = "" id ="img14" class = "hidden" width="30" height="30">
     </div>
     <div id = "fifteen">
@@ -160,9 +161,9 @@
       <p>Scan the QR code and you'll see a riddle.</p>
       <p>Solve this last clue and you are through.</p>
       <center><img src="qr.png" width="250" height="250"></center>
-      <b><label for ="qr">Your Answer:</label></b>
-      <input type="text" id ="qr" autocomplete="off">
-      <button class="submit" id="submit15">Submit Answer</button>
+      <b><label for ="c15">Your Answer:</label></b>
+      <input type="text" id ="c15" autocomplete="off" mdf="edda266cdb6345b9f6914cc2e7577475">
+      <button class="submit" id="submit15" onclick="check('submit15','c15','img15','fifteen')" >Submit Answer</button>
       <img src = "" id ="img15" class = "hidden" width="30" height="30">
     </div>
   </div>

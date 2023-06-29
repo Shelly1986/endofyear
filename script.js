@@ -1,35 +1,56 @@
 var score = 0; 
+
 document.getElementById('submit1').addEventListener('click',()=>{
-  if (document.getElementById('louvre').value.toLowerCase() == 'laduree' || document.getElementById('louvre').value.toLowerCase() == 'ladurée'){
+  let match = false;
+  const value = document.getElementById('c1').value.toUpperCase().replace(/\s+/g, "");
+  const correct = document.getElementById('c1').getAttribute("mdf");
+  for (let i = 0; i<=value.length; i++){
+    const answer = md5(value.slice(0, i))
+    if (answer === correct){
+      match = true;
+    }
+  }
+  if (match === true){
     score = score + 1;
-    document.getElementById('laduree').classList.remove('hidden')
-    document.getElementById('laduree').setAttribute('src','correct.png')
+    document.getElementById('img1').classList.remove('hidden')
+    document.getElementById('img1').setAttribute('src','correct.png')
     document.getElementById('one').classList.add('overlay');
-    document.getElementById('louvre').value = '';
-    document.getElementById('louvre').disabled = 'true';
+    document.getElementById('c1').value = '';
+    document.getElementById('c1').disabled = 'true';
     document.getElementById('submit1').disabled = 'true';
     document.getElementById('score').innerHTML = score;
     
   } else{
-    document.getElementById('laduree').classList.remove('hidden')
-    document.getElementById('laduree').setAttribute('src','cross.png')
+    document.getElementById('img1').classList.remove('hidden')
+    document.getElementById('img1').setAttribute('src','cross.png')
   }
 })
 
 document.getElementById('submit2').addEventListener('click',()=>{
-  if (document.getElementById('bean').value.toLowerCase() == 'jeff'){
+  let match = false;
+  const value = document.getElementById('c2').value.toUpperCase().replace(/\s+/g, "");
+  const correct = document.getElementById('c2').getAttribute("mdf");
+  for (let i = 0; i<=value.length; i++){
+    const answer = md5(value.slice(0, i))
+    if (answer === correct){
+      match = true;
+    }
+  }
+  if (match === true){
     score = score + 1;
     document.getElementById('img2').classList.remove('hidden')
     document.getElementById('img2').setAttribute('src','correct.png')
     document.getElementById('two').classList.add('overlay');
-    document.getElementById('bean').value = '';
-    document.getElementById('bean').disabled = 'true';
+    document.getElementById('c2').value = '';
+    document.getElementById('c2').disabled = 'true';
     document.getElementById('submit2').disabled = 'true';
     document.getElementById('score').innerHTML = score;
     
   } else{
     document.getElementById('img2').classList.remove('hidden')
-    document.getElementById('img2').setAttribute('src','cross.png')
+    document.getElementById('img2
+    
+    ').setAttribute('src','cross.png')
   }
 })
 
